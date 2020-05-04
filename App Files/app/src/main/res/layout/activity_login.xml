@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/oceanic_gradient"
+    tools:context=".LoginActivity"
+    android:padding="16sp">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLarge"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_form"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email"
+            android:hint="enter registered email"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter password"
+            android:maxLines="1"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogin"
+            android:textSize="19sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#2c003e"
+            android:background="@android:color/transparent"
+            android:text="LOGIN"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:gravity="center_horizontal"
+            android:textSize="19sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#16817a"
+            android:background="@android:color/transparent"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCreateAcc"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#2c003e"
+            android:background="@android:color/transparent"
+            android:text="Create new Account"
+            android:textStyle="bold"/>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

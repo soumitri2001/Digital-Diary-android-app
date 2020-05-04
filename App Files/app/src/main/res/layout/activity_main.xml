@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="18dp"
+    android:background="@drawable/gradient_bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=" Write. Share. Express."
+        android:fontFamily="roboto_slab_bold"
+        android:textSize="25sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="cursive"
+                android:textColor="#4a47a3"
+                android:text=" A personalised diary for blogs, daily journals and much more ! "
+                android:textSize="25sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="#162447"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:text="Let's get started"
+        android:background="@android:color/transparent"/>
+
+
+</LinearLayout>

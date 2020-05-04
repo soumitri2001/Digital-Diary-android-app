@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#A1C4FD">
+
+    <item
+        android:id="@+id/action_recentPosts"
+        android:title="View Recent Posts"
+        app:showAsAction="never"
+        android:background="#A1C4FD"/>
+
+    <item
+        android:id="@+id/action_add"
+        android:title="Add New Post"
+        app:showAsAction="never"
+        android:background="#A1C4FD"/>
+
+    <item
+        android:id="@+id/action_signout"
+        android:title="Sign Out"
+        app:showAsAction="never"
+        android:background="#A1C4FD"/>
+
+    <item
+        android:id="@+id/action_devSite"
+        android:title="Meet Developer"
+        app:showAsAction="never"
+        android:background="#A1C4FD"/>
+
+
+
+
+</menu>

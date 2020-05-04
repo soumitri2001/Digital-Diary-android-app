@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newpost_gradient"
+    tools:context=".PostJournalActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/post_imageView"
+            android:layout_width="389dp"
+            android:layout_height="259dp"
+            android:src="@drawable/wallpaper"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.012" />
+
+        <TextView
+            android:id="@+id/tvPostUsername"
+            android:layout_width="125dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="arial"
+            android:text="User"
+            android:textColor="#442727"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/post_imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPostDate"
+            android:layout_width="125dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="40dp"
+            android:fontFamily="arial"
+            android:text="Today"
+            android:textColor="#442727"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/post_imageView"
+            app:layout_constraintTop_toBottomOf="@+id/tvPostUsername" />
+
+        <ImageView
+            android:id="@+id/ivCameraButton"
+            android:layout_width="137dp"
+            android:layout_height="136dp"
+            android:layout_marginBottom="24dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toTopOf="@+id/tvPostUsername"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            android:focusable="true" />
+
+        <EditText
+            android:id="@+id/etPostTitle"
+            android:layout_width="314dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:ems="10"
+            android:textStyle="bold"
+            android:inputType="textPersonName"
+            android:hint="Title"
+            android:fontFamily="arial"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/post_imageView" />
+
+        <EditText
+            android:id="@+id/etPostThought"
+            android:layout_width="310dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="25dp"
+            android:ems="10"
+            android:fontFamily="arial"
+            android:gravity="start"
+            android:hint="Thoughts..."
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:scrollbars="vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPostTitle" />
+
+        <ProgressBar
+            android:id="@+id/post_progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="195dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPostThought" />
+
+        <Button
+            android:id="@+id/btnSubmitPost"
+            android:layout_width="359dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="80dp"
+            android:background="@android:color/transparent"
+            android:padding="18dp"
+            android:text="SUBMIT POST"
+            android:textColor="#1D2671"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/post_progressBar"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
