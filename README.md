@@ -6,4 +6,4 @@ This is an Android Application built from scratch that allows users to create an
 
 Tools used: <code>Android studio</code>, <code>Firebase</code> and a lovely image processing library <code>Picasso</code> !
 
-Download .apk file: <a href="https://github.com/soumitri2001/Digital-Diary-android-app/tree/master/App%20Files/app/release-apk">Digital Diary for Android</a>
+Download the app from Google Play: <a href="https://play.google.com/store/apps/details?id=com.appdevsoumitri.quickchatapp">Digital Diary</a>
